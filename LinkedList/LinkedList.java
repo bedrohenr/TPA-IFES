@@ -19,7 +19,7 @@ public class LinkedList<T> {
             this.last = newE;
             this.size++;
         } else {
-            this.first.setNext(newE);
+            this.last.setNext(newE);
             this.last = newE;
             this.size++;
         }
@@ -75,7 +75,10 @@ public class LinkedList<T> {
         s += "]";
 
         return s;
+    }
 
+    public int getSize(){
+        return this.size;
     }
 
 }
